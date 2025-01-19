@@ -4,7 +4,8 @@ Tech Setup:
 - Hibernate for entity mapping.
 - MySQL for the database.
 
-API:
+# API:
+
 Users:
 - GET /api/users → Fetch all users and display them in a list/table.
 - POST /api/users → Add a new user via a form.
