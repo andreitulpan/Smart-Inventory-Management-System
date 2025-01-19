@@ -1,6 +1,7 @@
 package com.andreitech.sims.entity.products;
 
 import com.andreitech.sims.entity.Product;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
@@ -23,6 +24,7 @@ public class Food extends Product {
 
     private String nutritionInfo;
 
+    @JsonIgnore
     @Transient
     private long daysUntilExpiry;
 

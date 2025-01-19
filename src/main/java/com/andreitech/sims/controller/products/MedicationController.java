@@ -48,5 +48,4 @@ public class MedicationController {
         List<Medication> medications = medicationService.getAllMedicationsForUser(userId);
         return new ResponseEntity<>(medications, HttpStatus.OK);
     }
-
 }
