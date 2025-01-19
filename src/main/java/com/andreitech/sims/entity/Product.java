@@ -6,6 +6,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "products")
+@Inheritance(strategy = InheritanceType.JOINED)
 @Getter
 @Setter
 public class Product {
@@ -18,4 +19,8 @@ public class Product {
     private String category;
     private Integer quantity;
     private Double price;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 }
